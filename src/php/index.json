@@ -201,60 +201,192 @@
       }
   },
   "beibei": {
-    "img": "http://localhost:8888/img/f1.min.jpg",
     "total1": {
+      "img": "http://localhost:8888/img/b1.min.jpg",
       "tit1": "婴儿套装大红色春秋男女宝宝满月服",
       "tit2": "百天周岁中国风新年衣服夹棉两件套",
       "litte": "秒杀价",
-      "price": "69:00",
+      "price": "109:00",
       "go": "马上抢",
       "pin": "市场价",
-      "num": "￥229:00",
+      "num": "￥220:00",
       "peo": "0人已买"
     },
     "total2": {
-      "img": "http://localhost:8888/img/f2.min.jpg",
+      "img": "http://localhost:8888/img/b2.min.jpg",
         "tit1": "婴儿内衣纯棉套装男女宝宝秋衣秋裤",
         "tit2": "新生儿衣服春秋季家居两件套",
         "litte": "秒杀价",
-        "price": "89:00",
+        "price": "99:00",
         "go": "马上抢",
         "pin": "市场价",
-        "num": "￥129:00",
+        "num": "￥150:00",
         "peo": "2人已买"
       },
       "total3": {
-        "img": "http://localhost:8888/img/f3.min.jpg",
+        "img": "http://localhost:8888/img/b3.min.jpg",
         "tit1": "婴儿套装大红色春秋男女宝宝满月服",
         "tit2": "百天周岁中国风新年衣服夹棉两件套",
         "litte": "秒杀价",
-        "price": "129:00",
+        "price": "299:00",
         "go": "马上抢",
         "pin": "市场价",
-        "num": "￥249:00",
+        "num": "￥349:00",
         "peo": "74人已买"
       },
       "total4": {
-        "img": "http://localhost:8888/img/f4.min.jpg",
-        "tit1": "婴儿衣服秋冬装连体衣0-6个月",
+        "img": "http://localhost:8888/img/b4.min.jpg",
+        "tit1": "婴儿衣服秋冬装连体衣0-6个月爬爬服",
         "tit2": "男女宝宝外出哈衣新生儿爬爬服",
         "litte": "秒杀价",
-        "price": "82:00",
+        "price": "80:00",
         "go": "马上抢",
         "pin": "市场价",
-        "num": "￥169:00",
+        "num": "￥160:00",
         "peo": "240人已买"
       },
       "total5": {
-        "img": "http://localhost:8888/img/f5.jpg",
-        "tit1": "婴儿礼盒套装秋冬衣服加厚棉衣",
+        "img": "http://localhost:8888/img/b1.min.jpg",
+        "tit1": "婴儿礼盒套装秋冬衣服加厚棉衣8件套",
         "tit2": "0-6个月新生儿纯棉保暖衣服8件套",
         "litte": "秒杀价",
-        "price": "49:00",
+        "price": "66:00",
         "go": "马上抢",
         "pin": "市场价",
         "num": "￥109:00",
         "peo": "100人已买"
+      }
+  },
+  "duoweixi":{
+    "total1": {
+      "img": "http://localhost:8888/img/rr.min.jpg",
+      "tit1": "原宿晚晚风复古港味森女系俏皮宽松网红款",
+      "litte": "秒杀价",
+      "price": "100:00",
+      "go": "拼团",
+      "num": "￥200:00"
+    },
+    "total2": {
+      "img": "http://localhost:8888/img/www.jpg",
+        "tit1": "2018秋冬新款中长款针织开衫宽松长袖毛衣外套女",
+        "litte": "秒杀价",
+        "price": "299:00",
+        "go": "拼团",
+        "num": "￥353:00"
+      },
+      "total3": {
+        "img": "http://localhost:8888/img/uu.min.jpg",
+        "tit1": "原宿晚晚风复古港味森女系俏皮宽松网红款",
+        "litte": "秒杀价",
+        "price": "199:00",
+        "go": "拼团",
+        "pin": "市场价",
+        "num": "￥267:00"
+      },
+      "total4": {
+        "img": "http://localhost:8888/img/we.jpg",
+        "tit1": "女装2018春秋新款牛仔裤女九分宽松高腰韩版破洞",
+        "litte": "秒杀价",
+        "price": "180:00",
+        "go": "拼团",
+        "num": "￥298:00"
+      },
+      "total5": {
+        "img": "http://localhost:8888/img/rr.min.jpg",
+        "tit1": "2018春季新款牛仔裤女小脚裤高腰破洞铅笔九分裤子",
+        "litte": "秒杀价",
+        "price": "166:00",
+        "go": "拼团",
+        "pin": "市场价",
+        "num": "￥328:00"
+      }
+  },
+  "daiweibeila":{
+    "total1": {
+      "img": "http://localhost:8888/img/x1.min.jpg",
+      "tit1": "巴布豆童鞋2018夏秋新款毛虫休闲时尚透气运动鞋",
+      "litte": "秒杀价",
+      "price": "160:00",
+      "go": "99元选两件",
+      "num": "￥250:00"
+    },
+    "total2": {
+      "img": "http://localhost:8888/img/x2.min.jpg",
+        "tit1": "巴布豆童鞋2018夏秋新款毛虫休闲时尚透气运动鞋",
+        "litte": "秒杀价",
+        "price": "99:00",
+        "go": "99元选两件",
+        "num": "￥153:00"
+      },
+      "total3": {
+        "img": "http://localhost:8888/img/x3.min.jpg",
+        "tit1": "巴布豆童鞋2018夏秋新款毛虫休闲时尚透气运动鞋",
+        "litte": "秒杀价",
+        "price": "59:00",
+        "go": "99元选两件",
+        "pin": "市场价",
+        "num": "￥67:00"
+      },
+      "total4": {
+        "img": "http://localhost:8888/img/x4.min.jpg",
+        "tit1": "巴布豆童鞋2018夏秋新款毛虫休闲时尚透气运动鞋",
+        "litte": "秒杀价",
+        "price": "92:00",
+        "go": "拼团",
+        "num": "￥128:00"
+      },
+      "total5": {
+        "img": "http://localhost:8888/img/x5.min.jpg",
+        "tit1": "巴布豆童鞋2018夏秋新款毛虫休闲时尚透气运动鞋",
+        "litte": "秒杀价",
+        "price": "156:00",
+        "go": "拼团",
+        "pin": "市场价",
+        "num": "￥228:00"
+      }
+  },
+  "aiyimei":{
+    "total1": {
+      "img": "http://localhost:8888/img/n1.min.jpg",
+      "tit1": "女士加绒弹力魔术黑色打底裤女外穿2018新款铅笔显瘦小脚",
+      "litte": "秒杀价",
+      "price": "179:00",
+      "go": "拼团",
+      "num": "278:00"
+    },
+    "total2": {
+      "img": "http://localhost:8888/img/n2.min.jpg",
+        "tit1": "女士加绒弹力魔术黑色打底裤女外穿2018新款铅笔显瘦小脚",
+        "litte": "秒杀价",
+        "price": "179:00",
+        "go": "拼团",
+        "num": "￥243:00"
+      },
+      "total3": {
+        "img": "http://localhost:8888/img/n3.min.jpg",
+        "tit1": "女士加绒弹力魔术黑色打底裤女外穿2018新款铅笔显瘦小脚",
+        "litte": "秒杀价",
+        "price": "279:00",
+        "go": "拼团",
+        "pin": "市场价",
+        "num": "￥367:00"
+      },
+      "total4": {
+        "img": "http://localhost:8888/img/n4.min.jpg",
+        "tit1": "女士加绒弹力魔术黑色打底裤女外穿2018新款铅笔显瘦小脚",
+        "litte": "秒杀价",
+        "price": "172:00",
+        "go": "拼团",
+        "num": "￥398:00"
+      },
+      "total5": {
+        "img": "http://localhost:8888/img/n5.min.jpg",
+        "tit1": "女士加绒弹力魔术黑色打底裤女外穿2018新款铅笔显瘦小脚",
+        "litte": "秒杀价",
+        "price": "256:00",
+        "go": "拼团",
+        "pin": "市场价",
+        "num": "￥328:00"
       }
   }
 }

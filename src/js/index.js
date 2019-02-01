@@ -42,7 +42,7 @@ $('.triangle_border_down').on('click',function(){
      function render(res) {
       //  console.log(res)
       var aside = res.aside;
-      console.log(aside);
+      // console.log(aside);
       var hhtml = template("botm",{list0:aside});
       $(".left-list").html(hhtml);
       var list = res.foryou;
@@ -52,5 +52,21 @@ $('.triangle_border_down').on('click',function(){
       var html = template("list1",{list:list});
        $(".foto").html(html);
       var html2 = template("list2",{list2:list2});
-       $('.foto2').html(html2);
+       $('.cont').html(html2);
+       var list3 = res.beibei;
+      //  console.log(list3)
+       var html3 = template("list3",{list3:list3});
+       $('.cont3').html(html3);
+       var list4 = res.duoweixi;
+      //  console.log(list4)
+       var html4 = template("list4",{list4:list4});
+       $('.cont4').html(html4);
+       var list5 = res.daiweibeila;
+      //  console.log(list5)
+       var html5 = template("list5",{list5:list5});
+       $('.cont5').html(html5);
+       var list6 = res.aiyimei;
+      //  console.log(list6)
+       var html6 = template("list6",{list6:list6});
+       $('.cont6').html(html6);
      }
