@@ -156,7 +156,7 @@
       "peo": "0人已买"
     },
     "total2": {
-      "img": "http://localhost:8888/img/f2.min.jpg",
+      "img": "http://localhost:8888/img/f2.jpg",
         "tit1": "贝贝怡夹棉连体衣",
         "tit2": "夹棉加厚，舒适保暖",
         "litte": "秒杀价",
@@ -167,7 +167,7 @@
         "peo": "2人已买"
       },
       "total3": {
-        "img": "http://localhost:8888/img/f3.min.jpg",
+        "img": "http://localhost:8888/img/f3.jpg",
         "tit1": "咕噜日记保暖2件装棉服",
         "tit2": "超值棉服 加厚保暖",
         "litte": "秒杀价",
@@ -178,7 +178,7 @@
         "peo": "74人已买"
       },
       "total4": {
-        "img": "http://localhost:8888/img/f4.min.jpg",
+        "img": "http://localhost:8888/img/f4.jpg",
         "tit1": "咕噜日记保暖2件装棉服",
         "tit2": "超值棉服 加厚保暖",
         "litte": "秒杀价",

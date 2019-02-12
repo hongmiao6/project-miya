@@ -43,7 +43,7 @@ gulp.task('sass',()=>{
 })
 //转存js
 gulp.task('js',()=>{
-	gulp.src('./src/js/*.js')
+	return gulp.src('./src/js/*.js')
 	.pipe(gulp.dest('./dist/js'));
 })
 //转存 压缩图片

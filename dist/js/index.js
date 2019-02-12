@@ -70,3 +70,54 @@ $('.triangle_border_down').on('click',function(){
        var html6 = template("list6",{list6:list6});
        $('.cont6').html(html6);
      }
+
+   //  搜索框接口
+   var Search = document.getElementById('search');
+   var List = document.getElementById("list");
+   var childlis = list.children;
+   // console.log(childlis)
+   // 键盘按下 下拉框出现
+   Search.onkeydown = function(){
+     list.style.border = "2px solid #ff3893";
+     list.style.borderbottom = 0;
+     list.style.background = "#fff";
+   }
+// 鼠标点击搜索的词跳转到百度
+
+// list.onclick = function(){
+//    location.href = "https://www.baidu.com";
+// }
+
+// 鼠标移出搜索框 下拉框隐藏
+   Search.onblur = function(){
+      list.style.display = "none";
+   }
+      // 添加监听事件 input => 输入时间
+      Search.addEventListener('input', baidu);
+       // 利用函数节流实现百度搜索;
+       var showNum = 4;
+       var timer = null;
+      function baidu() {
+          if(timer  !==  null){
+              //如果在规定时间之内已经执行过一次了,就不用在执行了;
+              return false;
+                }
+                //设置一个定时器，让input触发事件，100毫秒执行一次，不必一直触发
+                timer = setTimeout(function (){
+                      // console.log(search.value);
+                      // 1. 发送一个jsonp请求; 请求回来的数据渲染页面 即将数据库返回的数据进行页面布局 将搜索信息放到ul li中;
+                      var url = `https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=${search.value}&json=1&p=3&sid=1422_21089_28131_26350_28266&req=2&csor=2`;
+
+                      jsonp(url,"cb") //cb是百度接口定义的回调函数 我们就以这个回调来接收响应的数据
+                      .then(function(res){ 
+                            console.log(res.s);//res是后端相应的数据 res里的s（key）才是我们需要用到的数据
+                            var html = "";
+                            res.s.every((item,index)=>{
+                                  html += `<li>${item}</li>`
+                                  return index < showNum;
+                            })
+                            list.innerHTML = html;
+                      })
+                      timer = null;
+                },100)
+          }

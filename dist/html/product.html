@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>商品页</title>
+    <link rel="stylesheet" href="http://localhost:8888/css/product.css" />
+  </head>
+  <body style="background:#f9f9f9">
+    <!-- 头部导航 -->
+    <header>
+      <div class="top_nav">
+        <footer>
+          <i class="iconfont">&#xe631;</i>
+          <a href="https://www.mia.com/app.html">手机蜜芽</a
+          ><span class="advertising">本商城推介信息为广告</span>
+          <p class="hello">你好，欢迎来到蜜芽！</p>
+          <div class="login">
+            <a href="register.html">登录&nbsp;&nbsp;&nbsp;&nbsp;|</a>
+            <a href="register.html">&nbsp;&nbsp;&nbsp;&nbsp;免费注册</a>
+            <a href="https://www.mia.com/help.html" style="margin-left:23px"
+              >帮助中心</a
+            >
+          </div>
+        </footer>
+      </div>
+    </header>
+    <!-- 搜索框 -->
+    <div class="big-box">
+      <div class="search_box">
+        <a href="index.html"
+          ><img src="http://localhost:8888/img/a (2).min.png"
+        /></a>
+        <input type="text" id="search" />
+        <p><span class="sc">搜&nbsp;&nbsp;索</span></p>
+        <div class="shop">
+          <p><i class="iconfont" id="iconfont">&#xe735;</i></p>
+          <span class="shopcar">购物车</span>
+          <div class="bottom-box"></div>
+        </div>
+      </div>
+      <!-- 页面两边固定的小图标 -->
+      <div id="left-icon">
+        <img
+          src="http://localhost:8888/img/1 (11).min.png"
+          alt=""
+          id="left-pic"
+        />
+      </div>
+      <ul id="rit-icon">
+        <li>
+          <a href=""
+            ><i class="iconfont">&#xe735;</i>
+            <p>购物车</p>
+          </a>
+        </li>
+        <li>
+          <a href=""
+            ><i class="iconfont">&#xe69f;</i>
+            <p>咨&nbsp;询</p>
+          </a>
+        </li>
+        <li id="last-lis" style="border:0">
+          <a href=""><i class="iconfont">&#xe661;</i></a>
+          <p>微&nbsp;信</p>
+        </li>
+        <li id="last-li"><a href=""></a></li>
+        <div class="triangle_border_down"></div>
+        <img id="move-pic" src="http://localhost:8888/img/1 (9).min.png" />
+      </ul>
+    </div>
+    <!-- 主导航 -->
+    <nav class="main_nav">
+      <ul class="nav-ul">
+        <li><a href="">首页</a></li>
+        <li><a href="">纸尿裤</a></li>
+        <li><a href="">奶粉</a></li>
+        <li style="color:white" ;class="one">
+          正品保证
+          <ul class="two-nav">
+            <li><a href="">正品保证</a></li>
+            <li><a href="">退货政策</a></li>
+            <li><a href="">帮助中心</a></li>
+          </ul>
+        </li>
+        <li><a href="">早教音乐</a></li>
+      </ul>
+    </nav>
+    <!-- 左边商品列表 -->
+    <div class="left-box">
+      <h3>
+        全部商品分类
+        <ul class="left-list">
+
+        </ul>
+      </h3>
+    </div>
+    <!-- 商品筛选信息 -->
+    <section>
+      <ul class="line-1" style="border-bottom:0">
+        <li>优惠活动</li>
+        <li><a href="#">立减10元</a></li>
+        <li><a href="#">满499减50</a></li>
+        <li><a href="#">直降</a></li>
+        <li><a href="#">送赠品</a></li>
+        <li style="margin-right:175px"><a href="#">立享8.5折</a></li>
+        <a href="#" id="ospan"><span>更多^</span></a>
+        <div class="lines-1" style="display:none">
+          <li style="margin-left:137px"><a href="#">满1677减89</a></li>
+          <li><a href="#">满1999减200</a></li>
+          <li><a href="#">满999减100</a></li>
+          <li><a href="#">拼团</a></li>
+        </div>
+      </ul>
+
+      <ul class="line-2" style="border-bottom:0;margin-top: 15px;">
+        <li>品牌</li>
+        <li><a href="#">新西兰原装</a></li>
+        <li><a href="#">德国爱他美</a></li>
+        <li><a href="#">荷兰牛栏</a></li>
+        <li><a href="#">德国原装</a></li>
+        <li style="margin-right:175px"><a href="#">澳洲爱他美</a></li>
+        <a href="#"><span id="spans">更多^</span></a>
+        <div class="lines-2" style="display:none">
+          <li style="margin-left:137px"><a href="#">满1677减89</a></li>
+          <li><a href="#">满1999减200</a></li>
+          <li><a href="#">满999减100</a></li>
+          <li><a href="#">拼团</a></li>
+        </div>
+      </ul>
+      <div style="height:15px;"></div>
+      <ul class="line-3">
+        <li style="  margin-right: 4px;">适用阶段</li>
+        <li><a href="#">pre</a></li>
+        <li><a href="#">一段</a></li>
+        <li><a href="#">三段</a></li>
+        <li><a href="#">二段</a></li>
+        <li><a href="#">五段</a></li>
+        <li><a href="#">全阶段</a></li>
+        <li><a href="#">六段</a></li>
+        <li><a href="#">四段</a></li>
+        <li><a href="#">成长1+</a></li>
+      </ul>
+      <ul class="line-3">
+        <li style="  margin-right: 13px;">适用年龄</li>
+        <li><a href="#">0-6个月</a></li>
+        <li><a href="#">1-2岁</a></li>
+        <li><a href="#">2-3岁</a></li>
+        <li><a href="#">3-6岁</a></li>
+        <li><a href="#">6-12个月</a></li>
+        <li><a href="#">其他</a></li>
+      </ul>
+      <ul class="line-3">
+        <li style=" margin-right: 4px;">包装方式</li>
+        <li><a href="#">盒装</a></li>
+        <li><a href="#">箱装</a></li>
+        <li><a href="#">灌装/杯装</a></li>
+        <li><a href="#">袋装</a></li>
+      </ul>
+      <ul class="line-3">
+        <li style=" margin-right: 4px;">原产地</li>
+        <li><a href="#">中国</a></li>
+        <li><a href="#">丹麦</a></li>
+        <li><a href="#">匈牙利</a></li>
+        <li><a href="#">德国</a></li>
+        <li><a href="#">澳大利亚</a></li>
+        <li><a href="#">荷兰</a></li>
+        <li><a href="#">爱尔兰</a></li>
+        <li><a href="#">英国</a></li>
+        <li><a href="#">韩国</a></li>
+      </ul>
+      <ul class="line-3">
+        <li style=" margin-right: 4px;">价格</li>
+        <li><a href="#">100-222</a></li>
+        <li><a href="#">220-420</a></li>
+        <li><a href="#">420-960</a></li>
+        <li><a href="#">1800-2700</a></li>
+        <li><a href="#">2700-3100</a></li>
+      </ul>
+      <ul class="line-3">
+        <li style=" margin-right: 4px;">分类</li>
+        <li><a href="#">婴儿奶粉</a></li>
+        <li><a href="#">母婴儿童</a></li>
+      </ul>
+    </section>
+    <article>
+      <ul class="choose">
+        <li><a href="" style="color:#ec0971">人气</a></li>
+        <li><a href="">销量</a></li>
+        <li><a href="">新品</a></li>
+        <li style="margin-right:15px"><a href="">价格</a></li>
+        <li id="inpt">
+          <input type="text" placeholder="￥" />-<input
+            type="text"
+            placeholder="￥"
+          />
+        </li>
+        <li><input type="checkbox" />只显示有货</li>
+        <p class="last">共计<span style="color:#ec0971">721</span>个商品</p>
+      </ul>
+     
+    </article>
+    <!-- 商品渲染 -->
+    <div id="pro">
+      <!-- <div class="item-pro">
+    <a href=""><img class="pic-1" src="http://localhost:8888/img/f1.min.jpg" alt=""></a>
+    <div class="botm-box">
+        <p>￥<strong>1388</strong><span>包税</span><span>非自营</span><span>1346</span></p>
+        <p id="hid">新西兰原装 a2 【包税直邮】新包装婴儿奶粉3段12~36M 900g*6罐</p>
+        <span id="small">直降</span><span>爆款直降</span>
+    </div>  
+  </div> -->
+    </div>
+    <!-- 分页 -->
+    <div id="geli">
+      <div class="swiper-pagination"></div> 
+    </div>
+
+  
+    
+    <!-- 底部 -->
+  <div id="bottom">
+      <ul class="topp-box">
+          <li><a href=""><img src="http://localhost:8888/img/h.min.png" alt="">
+              <h4>可信赖</h4><span>正品母婴特卖</span>
+          </a></li>
+          <li><a href=""><img src="http://localhost:8888/img/zz.min.png" alt="">
+              <h4>无忧</h4><span>正品保证</span>
+          </a></li>
+          <li><a href=""><img src="http://localhost:8888/img/777.png" alt="">
+              <h4>七天</h4><span>无理由退货</span>
+          </a></li>
+          <li><a href=""><img src="http://localhost:8888/img/c.min.png" alt="">
+              <h4>恒温仓</h4><span>完善的恒温仓库</span>
+          </a></li>
+          <li><a href=""><img src="http://localhost:8888/img/24.png" alt="">
+              <h4>24小时</h4><span>随时发货</span>
+          </a></li>
+          <li><a href=""><img src="http://localhost:8888/img/zan.min.png" alt="">
+              <h4>100万</h4><span>妈妈口碑信赖</span>
+          </a></li>
+      </ul>
+      <div class="mid-box">
+          <ul class="model">
+              <li style="font-weight:600;">使用帮助</li>
+              <li><a href="">新手指南</a></li>
+              <li><a href="">蜜粉值体系</a></li>
+              <li><a href="">蜜豆体系</a></li>
+              <li><a href="">正品承诺</a></li>
+          </ul>
+          <ul class="model">
+              <li style="font-weight:600;">支付方式</li>
+              <li><a href="">支付方式</a></li>
+              <li><a href="">支付流程</a></li>
+              <li><a href="">跨境进口税</a></li>
+          </ul>
+          <ul class="model">
+              <li style="font-weight:600;">配送方式</li>
+              <li><a href="">包邮政策</a></li>
+              <li><a href="">发货时间</a></li>
+              <li><a href="">配送区域</a></li>
+              <li><a href="">验货签收</a></li>
+          </ul>
+          <ul class="model">
+              <li style="font-weight:600;">售后服务</li>
+              <li><a href="">退货政策</a></li>
+              <li><a href="">退货流程</a></li>
+              <li><a href="">退款方式</a></li>
+          </ul>
+          <ul class="model-last">
+              <li style="font-weight:600;">联系方式</li>
+              <li>总裁邮箱 ceo@mia.com</li>
+              <li>商务合作 bd@mia.com</li>
+              <li>媒体合作 pr@mia.com</li>
+              <li>招商中心 zhaoshang@mia.com</li>
+              <li>企业采购 qiye@mia.com</li>
+          </ul>
+          <div class="moder">
+              <h4>关注蜜芽</h4>
+              <img src="http://localhost:8888/img/1 (1).min.jpg" alt="">
+              <ul class="weibo">
+                  <li><a href="">官方微博</a></li>
+                  <li>蜜芽微信</li>
+             </ul>
+          </div>
+      </div>
+      <!-- 最底部 -->
+      <div id="last-content">
+          <ul class="line-1">
+              <li> <a href=""></a>关于蜜芽 | </li>
+              <li> <a href=""></a>加入蜜芽 | </li>
+              <li> <a href=""></a>商务合作 | </li>
+              <li> <a href=""></a>帮助中心 | </li>
+              <li> <a href=""></a>联系我们 | </li>
+              <li> <a href=""></a>友情链接 | </li>
+          <li> <a href=""></a>触屏版 | </li>
+          <li> <a href=""></a>媒体报道 | </li>
+          <li> <a href=""></a>营业执照</li>
+      </ul>
+      <p class="lines">京公网安备：11010502027270 | 营业执照：91110105582599307U | 食品经营许可证：SP1101051410296669 | 出版物经营许可证：新出发京零字第朝160088号 </p>
+      <p class="lines">沪ICP备16004431号-2 | 员工舞弊举报：jiancha@mia.com 电话：010-56733467</p>
+      <p class="lines">通过本网站直接或者间接地推销商品或者服务的商业宣传活动均属“广告”</p>
+      <p class="lines">Copyright © 2018 北京花旺在线商贸有限公司 Mia.com 保留一切权利。</p>
+      <div class="img-box">
+          <img src="http://localhost:8888/img/a (9).min.jpg" alt="">
+          <img src="http://localhost:8888/img/a (22).min.jpg" alt="">
+      </div>
+  </div>
+  </div>
+  </body>
+  <!-- 左边商品列表 -->
+  <script type="text/html" id="botm">
+      {{each list0 item i}}
+      <li class='bottom'>
+      <h5>{{item.title}}</h5>
+      <div id="one-box">
+          <a href="product.html">{{item.classify.list1}}</a>
+          <a href="">{{item.classify.list2}}</a>
+          <a href="">{{item.classify.list3}}</a>
+          <a href="">{{item.classify.list4}}</a>
+          <a href="">{{item.classify.list5}}</a>
+          <a href="">{{item.classify.list6}}</a>
+      </div>
+    </li>
+    {{/each}}
+  </script>
+  <!-- 商品信息数据渲染 -->
+  <script type="text/html" id="product">
+    {{each list item i}}
+    <div class="item-pro">
+        <a href="http://localhost:8888/html/detailpro.html"><img class="pic-1" src={{item.img}}></a>
+        <div class="botm-box">
+            <p>￥<strong>{{item.price}}</strong><span>{{item.shui}}</span><span>{{item.ziying}}</span><span>{{item.old}}</span></p>
+            <a id="hid" href="#">{{item.title}}</a>
+            <span id="small">{{item.jiang}}</span><span>{{item.baojiang}}</span>
+        </div>
+      </div>
+    {{/each}}
+  </script>
+  <script src="https://cdn.bootcss.com/jquery/2.1.1-beta1/jquery.min.js"></script>
+  <script src="http://localhost:8888/js/art-template.js"></script>
+  <script src="http://localhost:8888/js/pagination.js"></script>
+  <script src="http://localhost:8888/js/product.js"></script>
+</html>
