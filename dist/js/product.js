@@ -28,7 +28,7 @@ $(window).scroll(function () {//开始监听滚动条
        $("#rit-icon").hide()
     }
  });
- 
+
  $('#last-lis').mouseenter(function(){
     // $('#move-pic').slideToggle(1000);
     $('#move-pic').css("display","block")
@@ -46,7 +46,7 @@ $('.triangle_border_down').on('click',function(){
 // 商品筛选吸顶效果
 $(window).scroll(function () {
    var top = $(document).scrollTop();
-   console.log(top);
+   // console.log(top);
    
    if(top >= 650 && top < 2650){
       $(".choose").css({"position":"fixed","top":"630"})
