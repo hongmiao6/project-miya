@@ -74,4 +74,16 @@ $.ajax("http://localhost:8888/php/product.json", {
  });
  
 
- 
+ // 购物车
+$(".shop").click(function(){
+   location.href = "http://localhost:8888/html/cart.html"
+ })
+ $(".shop").mouseenter(function(){
+   $(".shop").css({"borderLeft":"1px solid #ff3893","borderRight":"1px solid #ff3893","borderTop":"1px solid #ff3893","borderBottom":"1px solid #fff"});
+   // $(".hide-content").css({"borderTop":"0"})
+   $(".hide-content").show();
+ })
+ $(".shop").mouseleave(function(){
+   $(".shop").css({"border":"1px solid #e5e5e5"});
+   $(".hide-content").hide();
+ })

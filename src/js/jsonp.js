@@ -4,7 +4,7 @@ function jsonp(url, jsonp_key) {
         // 函数名随机处理避免占用命名空间，避免冲突;
 
         var randomName = "_" + Date.now()
-        console.log(randomName);
+        //console.log(randomName);
 
         window[randomName] = function (res) {
             // console.log(res);

@@ -14,7 +14,7 @@
       <div class="top_nav">
         <footer>
           <i class="iconfont">&#xe631;</i>
-          <a href="https://www.mia.com/app.html">手机蜜芽</a
+          <a href="http://localhost:8888/html/advertise.html">手机蜜芽</a
           ><span class="advertising">本商城推介信息为广告</span>
           <p class="hello">你好，欢迎来到蜜芽！</p>
           <div class="login">
@@ -41,6 +41,7 @@
           <span class="shopcar">购物车</span>
           <div class="bottom-box"></div>
         </div>
+        <div class="hide-content">购物车还没有商品，快去选购吧！</div>
       </div>
       <!-- 页面两边固定的小图标 -->
       <div id="left-icon">
@@ -112,6 +113,38 @@
          
       </ul>
   </div>
+   <!-- 侧边隐藏的盒子 -->
+   <div class="showbox">
+      <div class="lef">
+        <h5>清洁消毒</h5>
+        <p class="inner">
+          <a href="http://localhost:8888/html/product.html">奶瓶清洁</a>
+          <a href="http://localhost:8888/html/product.html">餐具清洁</a>
+          <a href="http://localhost:8888/html/product.html">洗衣粉/皂/液</a>
+          <a href="http://localhost:8888/html/product.html">果蔬清洁</a>
+          <a href="http://localhost:8888/html/product.html">洗手液</a>
+          <a href="http://localhost:8888/html/product.html">消毒液/柔顺剂</a>
+          <a href="http://localhost:8888/html/product.html">宝宝湿巾</a>
+        </p>
+      </div>
+      <div class="rit">
+        <h5>家居生活</h5>
+        <p class="inner">
+            <a href="">拖鞋</a>
+            <a href="">枕头/枕巾</a>
+            <a href="">锅具</a>
+            <a href="">床上用品</a>
+            <a href="">家庭清洁</a>
+            <a href="">个护电器</a>
+            <a href="">锅具</a>
+            <a href="">出行箱包/伞</a>
+            <a href="">内衣/家居服/袜</a>
+            <a href="">家庭清洁</a>
+            <a href="">个护电器</a>
+            <a href="">毛巾/浴巾</a>
+        </p>
+      </div>
+    </div>
     <!-- 为你推荐 -->
     <div class="container1">
       <section id="one-pic-box">
@@ -291,25 +324,25 @@
   </body>
   <script type="text/html" id="botm">
     {{each list0 item i}}
-    <li class='bottom'>
+    <li class='bottom' id="botto">
     <h5>{{item.title}}</h5>
     <div id="one-box">
         <a href="product.html">{{item.classify.list1}}</a>
-        <a href="">{{item.classify.list2}}</a>
-        <a href="">{{item.classify.list3}}</a>
-        <a href="">{{item.classify.list4}}</a>
-        <a href="">{{item.classify.list5}}</a>
-        <a href="">{{item.classify.list6}}</a>
+        <a href="product.html">{{item.classify.list2}}</a>
+        <a href="product.html">{{item.classify.list3}}</a>
+        <a href="product.html">{{item.classify.list4}}</a>
+        <a href="product.html">{{item.classify.list5}}</a>
+        <a href="product.html">{{item.classify.list6}}</a>
     </div>
 </li>
 {{/each}}
 </script> 
   <script type="text/html" id="list1">
     {{each list item i}}
-                <dl class="first-pic">
+                <dl class="first-pic" onclick="window.location.href='http://localhost:8888/html/product.html'">
                     <dt><img src={{item.img}}></dt>
                     <dd>
-                        <a href=""id="stit">
+                        <a href="http://localhost:8888/html/product.html"id="stit">
                                 <h5>{{item.tit1}}</h5>
                             </a>
                             <a href="">
@@ -329,11 +362,11 @@
  </script>
  <script type="text/html" id="list2">
   {{each list2 item i}}
-  <div class="btm-content">
+  <div class="btm-content" onclick="window.location.href='http://localhost:8888/html/product.html'">
   <div class="top-tit">
     <a href=""><img src={{item.img}} alt="" title={{item.tit2}}></a>
     <!-- 标题 -->
-    <a href="">
+    <a href="http://localhost:8888/html/product.html">
         <p>{{item.tit1}}</p>
     </a>
     <a href=""><span>￥</span><span>{{item.price}}</span><span>{{item.num}}</span></a>

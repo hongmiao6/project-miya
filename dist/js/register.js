@@ -40,7 +40,7 @@ reg.click(function() {
   }
   var cookiedata = { num: numval, pasw: passwordval };
   var cookieStr = $.cookie("miya", cookiedata);
-  // console.log(cookieStr);
+  console.log(cookieStr);
   alert("注册成功！");
   // 判断  没有cookie就创建 有就取出再转对象 是否重复的判断
   if ((cookieStr = null)) {
@@ -51,7 +51,8 @@ reg.click(function() {
       }
     ];
     $.cookie("miya", cookiedata);
-  } else if ((cookie = $.cookie("miya"))) {
+  } 
+  else if ((cookie = $.cookie("miya"))) {
     var miyaarr = JSON.parse(cookieStr);
     var hasSamenum = miyalist.some(function(item, index) {
       if (item.num === cookiedata.num) {

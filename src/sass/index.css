@@ -163,12 +163,13 @@ header {
 }
 
 .shop {
-  width: 138px;
+  width: 137px;
   height: 32px;
   border: 1px solid #e5e5e5;
   position: absolute;
   top: 52px;
   right: 49px;
+  cursor: pointer;
 }
 
 .shop #iconfont {
@@ -178,6 +179,21 @@ header {
   left: 8px;
   height: 0px;
   font-size: 22px;
+}
+
+.hide-content {
+  width: 280px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  position: absolute;
+  z-index: -1;
+  top: 85px;
+  right: 49px;
+  border: 1px solid #ff3893;
+  font-size: 13px;
+  color: #4b4040;
+  display: none;
 }
 
 .shop p {
@@ -207,12 +223,13 @@ header {
 
 .main_nav {
   width: 100%;
+  height: 49px;
   background: #ff3893;
 }
 
 .nav-ul {
   padding-left: 290px;
-  width: 810px;
+  width: 820px;
   height: 49px;
   margin: 0 auto;
 }
@@ -338,10 +355,10 @@ header {
 #rit-icon .triangle_border_down {
   width: 0;
   height: 0;
-  border-width: 10px 10px 0;
-  border-style: solid;
-  border-color: white transparent transparent;
-  margin: -17px auto;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid white;
+  margin: -20px auto;
   position: relative;
 }
 
@@ -405,11 +422,9 @@ header {
 
 .left-box .left-list .bottom {
   width: 232px;
-  height: 68px;
   padding-left: 30px;
-  text-align: left;
   border-bottom: 1px dashed #666666;
-  background: url("../../dist/img/icon.jpg") no-repeat 200px 28px;
+  background: url("http://localhost:8888/img/icon.min.jpg") no-repeat 216px 28px;
 }
 
 .left-box .left-list .bottom h5 {
@@ -421,7 +436,7 @@ header {
 
 .left-box .left-list .bottom #one-box {
   width: 206px;
-  height: 55px;
+  height: 40px;
   line-height: 1;
 }
 
@@ -432,12 +447,51 @@ header {
   margin-right: 6px !important;
 }
 
-.left-list .bottom #one-box a:hover {
-  color: #ff3893;
+.showbox {
+  width: 870px;
+  height: 380px;
+  background: #fff;
+  position: absolute;
+  top: 228px;
+  left: 470px;
+  z-index: 2000;
+  display: none;
 }
 
-.left-list:nth-last-child() {
-  border-bottom: 0;
+.showbox .lef, .showbox .rit {
+  width: 250px;
+  height: 120px;
+  margin-left: 30px;
+  margin-top: 20px;
+  float: left;
+}
+
+.showbox .lef .inner a, .showbox .rit .inner a {
+  display: inline-block;
+  height: 24px;
+  text-decoration: none;
+  font-size: 12px;
+  color: #666;
+  margin-right: 10px;
+  line-height: 2;
+}
+
+.showbox h5 {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+.bottom:nth-of-type(8) {
+  border-bottom: 0 !important;
+}
+
+.left-list .bottom:hover {
+  background: #fff;
+  background-image: none !important;
+}
+
+.left-list .bottom #one-box a:hover {
+  color: #ff3893;
 }
 
 /* 为你推荐 */

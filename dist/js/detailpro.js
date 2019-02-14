@@ -17,6 +17,9 @@ $(".line8").mouseleave(function() {
   $(".hid").slideToggle();
 });
 
+$(".smallbox li").mouseleave(function() {
+  $(this).css({ "border-color": "#f7f7f7" });
+});
 // 鼠标移入下方小图 边框变色 
 $(".smallbox li").mouseenter(function() {
   $(this).css({ "border-color": "rgb(255, 56, 147)" });
@@ -26,10 +29,6 @@ $(".smallbox li").mouseenter(function() {
   $("#small img").eq(index).show().siblings("img").hide();
   $(".big img").eq(index).show().siblings().hide();
 });
-
-// $("#mark").mouseenter(function(){
-//   $(".big").show();
-// })
 
 // 鼠标移入左边盒子 触发三个事件 移入 移除 移动
 $("#small img").on({
@@ -57,7 +56,7 @@ $("#small img").on({
     $("#mask").css({
       left : left,
       top : top
-    })
+    });
     //右侧图片动起来
     var x1 = left* $(".big img").width()/$("#small").width();
     var y1 = top* $(".big img").height()/$("#small").height();
@@ -67,17 +66,21 @@ $("#small img").on({
       top : -y1
     })
   }
-})
-
-
-
-
-
-$(".smallbox li").mouseleave(function() {
-  $(this).css({ "border-color": "#f7f7f7" });
 });
 
-
+// 购物车
+$(".shop").click(function(){
+  location.href = "http://localhost:8888/html/cart.html"
+})
+$(".shop").mouseenter(function(){
+  $(".shop").css({"borderLeft":"1px solid #ff3893","borderRight":"1px solid #ff3893","borderTop":"1px solid #ff3893","borderBottom":"1px solid #fff"});
+  $(".hide-content").css({"borderTop":"1px solid #fff"})
+  $(".hide-content").show();
+})
+$(".shop").mouseleave(function(){
+  $(".shop").css({"border":"1px solid #e5e5e5"});
+  $(".hide-content").hide();
+})
 
 
 
