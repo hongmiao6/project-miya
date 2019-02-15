@@ -203,6 +203,58 @@ a {
   background: #ff3893;
   color: #fff !important; }
 
+#left-icon img {
+  position: fixed;
+  left: 67px;
+  top: 237px;
+  z-index: 1001; }
+
+#rit-icon {
+  width: 60px;
+  height: 180px;
+  position: fixed;
+  right: 128px;
+  background: #fff;
+  top: 237px;
+  z-index: 1001;
+  border: #c2c2c2 1px solid;
+  border-radius: 6px; }
+  #rit-icon li {
+    text-align: center;
+    width: 60px;
+    height: 50px;
+    line-height: 45px;
+    border-bottom: #c2c2c2 1px solid;
+    position: relative; }
+    #rit-icon li i {
+      font-size: 26px;
+      color: #ff3893; }
+    #rit-icon li p {
+      color: #222222;
+      font-size: 12px;
+      position: absolute;
+      left: 14px;
+      top: 17px; }
+  #rit-icon #last-li {
+    border: 0;
+    width: 61px;
+    height: 30px;
+    background: #ff3893;
+    border-radius: 0 0 6px 6px; }
+  #rit-icon .triangle_border_down {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid white;
+    margin: -20px auto;
+    position: relative; }
+  #rit-icon #move-pic {
+    position: absolute;
+    top: -44px;
+    right: 105px;
+    display: none; }
+
 .left-box {
   width: 262px;
   height: 605px;
@@ -415,6 +467,14 @@ span:hover .o {
         position: relative; }
         .pro-contanier .naifen-box .ritbox .line5 p:nth-of-type(1) {
           margin-bottom: 5px; }
+          .pro-contanier .naifen-box .ritbox .line5 p:nth-of-type(1) img:nth-of-type(1) {
+            position: absolute;
+            left: 142px;
+            top: 26px; }
+        .pro-contanier .naifen-box .ritbox .line5 p:nth-of-type(2) img:nth-of-type(1) {
+          position: absolute;
+          left: 142px;
+          top: 63px; }
         .pro-contanier .naifen-box .ritbox .line5 p span:nth-of-type(1) {
           font-size: 16px;
           color: #666;
@@ -428,14 +488,6 @@ span:hover .o {
           padding-top: 5px;
           font-size: 12px;
           color: #666; }
-        .pro-contanier .naifen-box .ritbox .line5 img:nth-of-type(1) {
-          position: absolute;
-          left: 142px;
-          top: 26px; }
-        .pro-contanier .naifen-box .ritbox .line5 img:nth-of-type(2) {
-          position: absolute;
-          left: 142px;
-          top: 63px; }
       .pro-contanier .naifen-box .ritbox .line6 {
         width: 600px;
         height: 62px;
@@ -479,7 +531,8 @@ span:hover .o {
           background: #f3519a;
           color: #fff;
           font-size: 18px;
-          float: left; }
+          float: left;
+          cursor: pointer; }
         .pro-contanier .naifen-box .ritbox .line7 .aixin {
           width: 102px;
           height: 55px;

@@ -141,8 +141,9 @@ function baidu() {
 }
 // 鼠标移入左边列表 侧边显示隐藏
 
-$(".left-list").mouseenter(function(){
-   $('.showbox').css({"display":"block"})
+$(".left-list").on("mouseenter",".bottom",function(){
+  // console.log($(this));
+  $('.showbox').css({"display":"block"})
 })
 $(".showbox").mouseenter(function(){
    $('.showbox').css({"display":"block"})

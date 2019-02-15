@@ -36,7 +36,7 @@
           <p><span class="sc">搜&nbsp;&nbsp;索</span></p>
           <div class="shop">
             <p><i class="iconfont" id="iconfont">&#xe735;</i></p>
-            <span class="shopcar">购物车</span>
+            <span class="shopcar">购物车<em style="font-style:normal;color: #ff3893"></em></span>
             <div class="bottom-box"></div>
           </div>
           <div class="hide-content">购物车还没有商品，快去选购吧！</div>
@@ -44,7 +44,7 @@
         <!-- 主导航 -->
     <nav class="main_nav">
         <ul class="nav-ul">
-          <li><a href="">首页</a></li>
+          <li><a href="http://localhost:8888//html/index.html">首页</a></li>
           <li><a href="">纸尿裤</a></li>
           <li><a href="">奶粉</a></li>
           <li style="color:white" ;class="one">
@@ -74,6 +74,31 @@
         <span>【包税直邮】新包装婴儿奶粉3段12~36M 900g*6罐</span>   
       </div>
     </div>
+        <!-- 页面两边固定的小图标 -->
+        <div id="left-icon">
+            <img src="http://localhost:8888/img/1 (11).min.png" alt="" id="left-pic" />
+          </div>
+          <ul id="rit-icon">
+            <li>
+              <a href="http://localhost:8888//html/cart.html"
+                ><i class="iconfont">&#xe735;</i>
+                <p>购物车</p>
+              </a>
+            </li>
+            <li>
+              <a href=""
+                ><i class="iconfont">&#xe69f;</i>
+                <p>咨&nbsp;询</p>
+              </a>
+            </li>
+            <li id="last-lis" style="border:0">
+              <a href=""><i class="iconfont">&#xe661;</i></a>
+              <p>微&nbsp;信</p>
+            </li>
+            <li id="last-li"><a href=""></a></li>
+            <div class="triangle_border_down"></div>
+            <img id="move-pic" src="http://localhost:8888/img/1 (9).min.png" alt="" />
+          </ul>
     <!-- 商品详情 -->
     <div class="pro-contanier">
             <div class="naifen-box">
@@ -117,11 +142,9 @@
                     <div class="line4"><span>售价</span><span>￥1388.00</span><span>￥1625.00</span><span>进口税</span>
                     <p class="good">优惠<a href="">直降</a><a href="">爆款直降</a></p>
                     </div>
-                    <div class="line5"><p><span>可选</span><span>默认</span></p>
-                        <img src="http://localhost:8888/img/duihao.png" alt="">
-                        <img src="http://localhost:8888/img/duihao.png" alt="">
-                        <p><span>规格</span><span>默认</span></p></div>
-                        <div class="line6"><span class="shu">数量</span><div class="num-box"><span class="icons">-</span><strong style="font-weight:400">1</strong><span class="icons">+</span></div></div>
+                    <div class="line5"><p><span>可选</span><span class="clk">默认</span><img src="http://localhost:8888/img/duihao.png" class="choose"></p>
+                        <p><span>规格</span><span class="clk">默认</span><img src="http://localhost:8888/img/duihao.png" class="choose"></p></div>
+                        <div class="line6"><span class="shu">数量</span><div class="num-box"><span class="icons" id="reduce">-</span><strong id="numbs" style="font-weight:400">1</strong><span class="icons" id="adds">+</span></div></div>
                         <div class="line7">
                             <div class="addcar">加入购物车</div>
                             <div class="aixin"><img src="http://localhost:8888/img/xin.png" alt=""><span>收藏</span></div>

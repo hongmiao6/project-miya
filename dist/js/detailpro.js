@@ -24,7 +24,7 @@ $(".smallbox li").mouseleave(function() {
 $(".smallbox li").mouseenter(function() {
   $(this).css({ "border-color": "rgb(255, 56, 147)" });
   var index = $(this).index();//获取每个小图的下标
-  console.log(index);
+  // console.log(index);
   // 鼠标移入下方小图 上方大图根据下标对应显示 
   $("#small img").eq(index).show().siblings("img").hide();
   $(".big img").eq(index).show().siblings().hide();
@@ -68,6 +68,35 @@ $("#small img").on({
   }
 });
 
+//  右边固定小图效果
+$("#last-lis").mouseenter(function() {
+  // $('#move-pic').slideToggle(1000);
+  $("#move-pic").css("display", "block");
+  $("#move-pic").animate({ right: "75px" });
+});
+$("#last-lis").mouseleave(function() {
+  $("#move-pic").css("display", "none");
+  $("#move-pic").animate({ right: "105px" });
+});
+
+// 获取屏幕滚动条高度
+$(window).scroll(function() {
+  //开始监听滚动条
+  //获取当前滚动条高度
+  var topp = $(document).scrollTop();
+  if (topp > 200) {
+    $("#left-icon img").show();
+    $("#rit-icon").show();
+  } else {
+    $("#left-icon img").hide();
+    $("#rit-icon").hide();
+  }
+});
+//  回到顶部
+$(".triangle_border_down").on("click", function() {
+  $("html,body").animate({ scrollTop: 0 }, 100);
+});
+
 // 购物车
 $(".shop").click(function(){
   location.href = "http://localhost:8888/html/cart.html"
@@ -82,10 +111,33 @@ $(".shop").mouseleave(function(){
   $(".hide-content").hide();
 })
 
+//点击默认勾选 显示隐藏
+$(".clk").click(function(){
+  $(this).next(".choose").toggle();
+});
 
+// 点击加减号 数字加加减减
+$("#adds").click(function(){
+  var num = $("#numbs").html();
+  var numadd =parseInt(num)+1;
+  if(num==0){ return;}
+    $("#numbs").html(numadd)
+});
 
+$("#reduce").click(function(){
+  var num = $("#numbs").html();
+  var numjian =parseInt(num)-1;
+  console.log(num);
+  if(num==1){ return;}
+    $("#numbs").html(numjian)
+});
 
-
+// 点击一个"加入购物车"按钮 就添加入购物车 然后把数据存入cookie中;
+$(".addcar").click(function(){
+    var pronum = $("#numbs").html();
+    console.log(pronum);
+    $("em").html(pronum);
+})
 
 
 
